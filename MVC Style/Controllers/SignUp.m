@@ -507,6 +507,7 @@ typedef enum {
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     NSLog(@"%s",__PRETTY_FUNCTION__);
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 
